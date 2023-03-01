@@ -122,8 +122,22 @@ form {
     border: 2px solid red;
 }
 
-.form-ctrl input[type="password"] + span::after{
+.form-ctrl input[type="password"] + span.true::after{
     position: absolute;
+    color: green;
+    font-size: 0.7rem;
+    content: "Passwords match";
+}
+
+.form-ctrl input[type="password"] + span.false::after{
+    position: absolute;
+    color: red;
+    font-size: 0.7rem;
+    content: "Passwords do not match";
+}
+
+.form-ctrl input[type="password"].false {
+    border: 1px solid red;
 }
 
 .right-footer {
