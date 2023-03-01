@@ -226,17 +226,22 @@ a:hover {
         gap: 10px;
     }
 
+    .form-ctrl label {
+        font-size: 1.3rem;
+    }
+
     .form-ctrl input[type="password"] + span {
         position: absolute;
     }
 
     .form-ctrl input {
-        width: 90%;
-        padding: 1rem 0.5rem;
+        width: 95%;
+        padding: 1.2rem 0.5rem;
+        font-size: 1.2rem;
     }
 
     .form-ctrl input::placeholder {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .right-footer {
