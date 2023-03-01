@@ -258,8 +258,8 @@ a:hover {
         color: green;
         font-size: 0.7rem;
         content: "Passwords match";
-        top: 57px;
-        left: -60px;
+        top: 103px;
+        left: -63px;
         white-space: nowrap;
 
     }
@@ -269,8 +269,8 @@ a:hover {
         color: red;
         font-size: 0.7rem;
         content: "Passwords do not match";
-        top: 57px;
-        left: -80px;
+        top: 103px;
+        left: -85px;
         white-space: nowrap;
     }
 }
