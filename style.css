@@ -37,7 +37,7 @@
     height: 15vh;
     background-color: rgba(0, 0, 205, 0.7);
     color: white;
-    font-size: 3rem;
+    font-size: calc(1rem + 2vw);
 }
 
 .logo img {
