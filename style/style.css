@@ -180,4 +180,87 @@ a:hover {
 }
 
 @media (max-width: 700px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .page > :first-child {
+        padding: 0;
+        height: 15vh;
+        width: auto;
+        background-position: center;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .logo img{
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .right-header {
+        padding: 1rem 2rem 1rem;
+    }
+
+    .right-header p{
+        font-size: 1rem;
+    }
+    
+    form {
+        gap: 1rem;
+    }
+
+    form h2 {
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    .form-ctrl {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-ctrl input[type="password"] + span {
+        position: absolute;
+    }
+
+    .form-ctrl input {
+        width: 90%;
+    }
+
+    .right-footer {
+        padding: 2rem 0 1rem;
+        text-align: center;
+    }
+
+    .right-footer p {
+        font-size: 1rem;
+    }
+
+    .form-ctrl input[type="password"] + span.true::after{
+        position: absolute;
+        color: green;
+        font-size: 0.7rem;
+        content: "Passwords match";
+        top: 57px;
+        left: -60px;
+        white-space: nowrap;
+
+    }
+    
+    .form-ctrl input[type="password"] + span.false::after{
+        position: absolute;
+        color: red;
+        font-size: 0.7rem;
+        content: "Passwords do not match";
+        top: 57px;
+        left: -80px;
+        white-space: nowrap;
+    }
 }
