@@ -232,6 +232,11 @@ a:hover {
 
     .form-ctrl input {
         width: 90%;
+        padding: 1rem 0.5rem;
+    }
+
+    .form-ctrl input::placeholder {
+        font-size: 1rem;
     }
 
     .right-footer {
