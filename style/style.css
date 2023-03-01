@@ -132,7 +132,7 @@ form {
 }
 
 .right-footer button {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     background-color: darkblue;
     border: none;
     color: white;
@@ -140,7 +140,7 @@ form {
     border-radius: 8px;
     font-size: calc(1rem + 0.3vw);
     width: 15rem;
-    height: 15%;
+    height: 3rem;
     overflow: hidden;
     transition: all ease-in-out 0.4s;
     font-family: inherit;
