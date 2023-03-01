@@ -94,6 +94,7 @@ form {
 .form-ctrl {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .form-ctrl input {
@@ -117,10 +118,17 @@ form {
     border: 1px solid blue;
 }
 
+.form-ctrl input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid red;
+}
+
+.form-ctrl input[type="password"] + span::after{
+    position: absolute;
+}
+
 .right-footer {
     padding-top: 2rem;
     padding-left: 3rem;
-    font-size: calc;
 }
 
 .right-footer button {
@@ -145,6 +153,7 @@ form {
 
 .right-footer p {
     font-size: calc(0.5rem + 0.7vw);
+    color: white;
 }
 
 a {
