@@ -12,6 +12,9 @@ password.addEventListener('focusout', (e) =>{
     else if(verifyPassword.value) {
         if (verifyPassword.value === e.currentTarget.value){
             span.classList.add("true");
+            span.classList.remove("false");
+            e.currentTarget.classList.remove("false");
+            verifyPassword.classList.remove("false");
         }
         else {
             span.classList.add("false");
@@ -32,6 +35,9 @@ verifyPassword.addEventListener('focusout', (e) =>{
     else if(password.value) {
         if (password.value === e.currentTarget.value){
             span.classList.add("true")
+            span.classList.remove("false");
+            e.currentTarget.classList.remove("false");
+            password.classList.remove("false");
         }
         else {
             span.classList.add("false")
