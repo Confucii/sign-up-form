@@ -60,19 +60,51 @@
     background-color: #a2a0b3;
 }
 
-form {
-    flex: 1 1 auto;
-    background-color: #deded2;
-}
-
 .right-header {
     padding-top: 10vh;
     padding-bottom: 2rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
 }
 
 .right-header p {
     font-size: calc(1rem + 0.3vw);  
     width: clamp(45ch, 50%, 75ch); 
     color:white;
+}
+
+form {
+    flex: 1 1 auto;
+    background-color: #deded2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 3rem 2rem;
+    z-index: 1;
+    box-shadow: 0px 1px 5px grey;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.form-ctrl {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-ctrl input {
+    width: 20rem;
+    height: 2rem;
+    padding: 5px 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: calc(1rem + 0.1vw);
+    font-family: inherit;
+}
+
+.right-footer {
+    padding-top: 2rem;
+    padding-left: 3rem;
 }

@@ -16,9 +16,22 @@
             <div class="right-header"><p>Upgrade Your Existence!<br><br>
                 From enhanced strength to neural interface, our augmentations will take you beyond humanity and into the future. <br><br>
                 Sign up today to join the next stage of evolution!</p></div>
-            <form action="./index.html" method="get" id="sign-up">  
+            <form action="./index.html" method="get" id="sign-up">
+                <h2>Start Evolution!</h2>
+                <div class="form-row">
+                    <div class="form-ctrl"><label for="name">Name</label><input type="text" name="name" id="name" pattern="[A-Za-z]"></div>
+                    <div class="form-ctrl"><label for="surname">Surname</label><input type="text" name="surname" id="surname" pattern="[A-Za-z]"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-ctrl"><label for="email">Email</label><input type="email" name="email" id="email"></div>
+                    <div class="form-ctrl"><label for="phone">Phone</label><input type="tel" name="phone" id="phone"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-ctrl"><label for="pwd">Password</label><input type="password" name="pwd" id="pwd"></div>
+                    <div class="form-ctrl"><label for="pwd-verify">Confirm password</label><input type="password" name="pwd-verify" id="pwd-verify"></div>
+                </div>
             </form>
-            <div class="right-footer"></div>
+            <div class="right-footer"><button type="submit" form="sign-up">Evolve</button></div>
         </div>
     </div>
 </body>
