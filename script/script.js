@@ -1,8 +1,10 @@
 let password = document.querySelector("#pwd");
 let verifyPassword = document.querySelector("#pwd-verify");
 let span = document.querySelector(".pwd-span");
+let submit = document.querySelector(".submit-btn");
+let form = document.querySelector("#sign-up");
 
-password.addEventListener('focusout', (e) =>{
+password.addEventListener('input', (e) =>{
     if(!e.currentTarget.value) {
         span.classList.remove("true");
         span.classList.remove("false");
@@ -24,7 +26,7 @@ password.addEventListener('focusout', (e) =>{
     }
 });
 
-verifyPassword.addEventListener('focusout', (e) =>{
+verifyPassword.addEventListener('input', (e) =>{
     
     if(!e.currentTarget.value) {
         span.classList.remove("true");
@@ -44,5 +46,12 @@ verifyPassword.addEventListener('focusout', (e) =>{
             e.currentTarget.classList.add("false");
             password.classList.add("false");
         }
+    }
+});
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (span.classList.contains("true") && form.checkValidity()) {
+        form.submit();
     }
 });
